@@ -1,0 +1,63 @@
+@keyframes rotateCover{
+    from{
+        transform: rotate(10deg);
+        height:160%;
+        width: 70%;
+
+    }
+    to{
+        transform: rotate(30deg);
+        height:140%;
+        width: 60%;
+    }
+}
+
+@keyframes rotateCover2nd{
+    0%{
+        right: -250px;
+    }
+    50%{
+        right:-250px;
+    }
+    100%{
+        right:-127px;
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+
+@keyframes title {
+    from {
+        left:82%;
+        opacity: 0;
+    }
+    to{
+        left:80%;
+        opacity: 1;
+    }
+}
+
+@keyframes imageShow {
+    from {
+        left:-30px;
+        opacity: 0.5;
+    }
+    to {
+        left:0;
+        opacity: 1;
+    }
+}
+
+@keyframes imageRemove {
+    from {
+        left:0;
+        opacity: 1;
+    }
+    to {
+        left:-30px;
+        opacity: 0;
+    }
+}
