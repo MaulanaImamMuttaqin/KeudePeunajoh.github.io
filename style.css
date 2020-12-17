@@ -5,13 +5,42 @@ body, html{
     font-family: 'B612';
     letter-spacing: 1px;
 }
+
+/* ------------------------------ MAIN --------------------------------- */
 .navbar{
-    height:20px;
+    height:70px;
     width: 100%;
-    border:1px solid;
     position:fixed;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
 }
+
+.navbar a{
+    background-color: none;
+    height: 60%;
+    text-align: center;
+    margin:0 140px;
+    width:7%;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(227, 235, 242);
+    font-weight: bolder;
+    line-height: 45px;
+    border-radius: 15px;
+    -webkit-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    transition: all .2s;
+    text-shadow: 3px 0px 7px #5B2718;
+}
+
+.navbar a:hover{
+    background-color: rgba(106,181,247, 1);
+}
+
 .main {
     width:100%;
     height:100%;
@@ -20,17 +49,19 @@ body, html{
     overflow: hidden;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-    animation: clipPathAnim 2s ease;
+    animation: clipPathAnim 1s ease;
 }
+
 .main-title{
     position: absolute;
     font-size: 27px;
     color: rgb(227, 235, 242);
     background-color: rgba(255, 255, 255,0);
-    padding: 50px;
-    padding-top: 150px;
+    padding: 150px 80px;
+    text-shadow: 3px 0px 7px #5B2718;
     animation: imageShow .3s ease;
 }
+
 .sideCover {
     height:140%;
     width: 60%;
@@ -43,6 +74,7 @@ body, html{
     animation: rotateCover 1s ease ;
     z-index: 2;
 }
+
 .two{
     -webkit-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
@@ -50,15 +82,27 @@ body, html{
     right:-127px;
     animation: rotateCover 1s ease, rotateCover2nd 2s ease;
     background: rgb(106,181,247);
-background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
+    background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
     z-index: 1;
     padding: 0;
 }
+
+.three {
+    top:210px;
+    left:195px;
+    width:25%;
+    animation: sideCover3rd 1s ease;
+    background: rgb(106,181,247);
+    background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
+    transform: rotate(-80deg);
+}
+
 .two .menu-cont{
     position: absolute;
     top:50%;
     
 }
+
 .menu{
     transform:rotate(-30deg) skewX(-30deg) ;
     margin:10px 0;
@@ -67,16 +111,21 @@ background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgb
 -moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 }
+
 .menu a{
     transform: skewX(30deg);
     display: block;
     text-decoration: none;
     color: rgb(196, 222, 244);
-    
+    text-shadow: 3px 0px 7px #5B2718;
 }
+
 .menu:hover{
-    background-color: rgba(194, 220, 242,.5);
+    background-color: rgba(194, 220, 242, 1);
+    cursor: pointer;
+
 }
+
 .logo{
     z-index: 2;
     position:absolute;
@@ -87,13 +136,16 @@ box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
     animation: title .5s ease;
     font-size: larger;
 }
+
 .logo h3{
     color: aliceblue;
 }
+
 .produk-menu{
     position:relative;
     left:0;
 }
+
 .produk-menu h1{
     display:block;
     position: absolute;
@@ -103,20 +155,109 @@ box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
     left:25%;
     transform:  translate(-50%, -50%);
 }
+
 .produk-menu img{
     height:100vh;
     width:80vw;
 }
+
 .masakan{
     display: none;
 }
+
 .minum{
     display: none;
 }
+
 .kue{
     display: none;
 }
 
+
+
+/* ------------------------------ SECOND --------------------------------- */
+
 .second{
-    height:100vh;
+    height:auto;
+    margin:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.second-title {
+    margin: 45px 0;
+}
+.second-title h1{
+    font-size: 45px;
+    
+}
+.feature{
+    position: relative;
+    width: 65vw;
+    height: 270px;
+    margin:40px;
+}
+.f1, .f3{
+    left:13vw;
+}
+.f2 {
+    right:13vw;
+}
+
+.logo-feature, .feature-text{
+    height:100%;
+    width:55%;
+    float: left;
+}
+.feature-text{
+    text-align: center;
+}
+.feature-text p{
+    font-size: larger;
+}
+.logo-feature{
+    position: relative;
+    width:44%;
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
+.logo-feature i{
+    color: rgb(84, 138, 255);
+}
+.logo-feature i, .logo-feature h3{
+    position: relative;
+    z-index:1;
+    margin: 0;
+}
+.logo-feature h3{
+    text-shadow: 3px 0px 7px #120907;
+    color: rgb(227, 235, 242);
+}
+.logo-anim-out, .logo-anim-in{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    background-color: rgba(73,73,210,1);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    animation: rotate 10s linear infinite;
+}
+.logo-anim-in{
+    width:20vw;
+    height:20vw;
+    background-color: rgba(208, 212, 255, 1);
+    animation: rotate 10s linear infinite;
+    animation-direction: reverse;
+}
+
+.f2 .logo-feature{
+    float:left;
+}
+.f2 .feature-text{
+    float:right;
 }

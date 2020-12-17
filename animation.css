@@ -33,6 +33,14 @@
         right:-127px;
     }
 }
+@keyframes sideCover3rd {
+    from{
+        top: 500px;
+    }
+    to {
+        top: 210px;
+    }
+}
 
 @keyframes rotate {
     from { transform: rotate(0deg); }
@@ -60,3 +68,4 @@
         opacity: 1;
     }
 }
+
