@@ -12,6 +12,16 @@
     }
 }
 
+@keyframes clipPathAnim{
+    from{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    }
+}
+
 @keyframes rotateCover2nd{
     0%{
         right: -250px;
@@ -48,16 +58,5 @@
     to {
         left:0;
         opacity: 1;
-    }
-}
-
-@keyframes imageRemove {
-    from {
-        left:0;
-        opacity: 1;
-    }
-    to {
-        left:-30px;
-        opacity: 0;
     }
 }

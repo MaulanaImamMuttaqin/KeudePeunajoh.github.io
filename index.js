@@ -1,8 +1,12 @@
 function showImage(gambar){
-    document.getElementById("produk-menu").style.display = "block";
-    document.getElementById("produk-menu").style.animation = "imageShow .3s ease";
+    document.getElementById("main-title").style.display="none";
+    document.getElementById(gambar).style.display = "block";
+    document.getElementById(gambar).style.animation = "imageShow .3s ease";
+   
 }
 function removeImage(gambar){
-    document.getElementById("produk-menu").style.display = "none";
-    document.getElementById("produk-menu").style.animation = "imageRemove .3s ease";
+    document.getElementById("main-title").style.display="block";
+    document.getElementById(gambar).style.display = "none";
+    document.getElementById(gambar).style.animation = "none";
+    document.getElementById("main-title").style.animation = "imageShow .3s ease";
 }

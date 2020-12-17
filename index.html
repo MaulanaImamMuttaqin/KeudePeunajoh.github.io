@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <title>Document</title>
@@ -14,22 +15,29 @@
         </ul>
     </div> -->
     <div class="main">
+        <div class="main-title" id="main-title">
+            <h1>Situs Belanja Online <br> Jajanan Khas Aceh</h1>
+        </div>
         <div class="sideCover"></div>
         <div class="sideCover two">
             <div class="menu-cont">
-                <div class="menu"><a href="#">Makanan</a></div>
-                <div class="menu" onmouseover="showImage('produk')" onmouseout="removeImage('produk')"><a href="#">Kue-Kue</a></div>
-                <div class="menu"><a href="#"></a>Minuman</div>
+                <div class="menu" onmouseover="showImage('masakan')" onmouseout="removeImage('masakan')"><a href="#">Makanan</a></div>
+                <div class="menu" onmouseover="showImage('kue')" onmouseout="removeImage('kue')"><a href="#">Kue-Kue</a></div>
+                <div class="menu" onmouseover="showImage('minum')" onmouseout="removeImage('minum')"><a href="#">Minuman</a></div>
             </div>
         </div>
         <div class="logo">
             <img src="logo4.png" alt="" srcset="" height="70">
-            <h3>Tempat Jajanan Khusus Aceh</h3>
         </div>
 
-        <div class="produk-menu" id="produk-menu">
-            <img id="gam-prod" src="produk.jpg" alt="">
-            <h1>Berbagai Macam Jajanan Khas Aceh</h1>
+        <div class="produk-menu masakan" id="masakan">
+            <img src="masakan.jpg" alt="">
+        </div>
+        <div class="produk-menu kue" id="kue">
+            <img src="kue.jpg" alt="">
+        </div>
+        <div class="produk-menu minum" id="minum">
+            <img src="minum.jpg" alt="">
         </div>
     </div>
 
@@ -37,6 +45,6 @@
     <div class="second">
 
     </div>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </body>
 </html>
