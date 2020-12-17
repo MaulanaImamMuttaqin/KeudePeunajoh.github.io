@@ -4,11 +4,12 @@ body, html{
     margin: 0;
     font-family: 'B612';
     letter-spacing: 1px;
+    scroll-behavior: smooth;
 }
 
 /* ------------------------------ MAIN --------------------------------- */
 .navbar{
-    height:70px;
+    height:6vh;
     width: 100%;
     position:fixed;
     z-index: 1;
@@ -16,25 +17,28 @@ body, html{
     justify-content: center;
     align-items: center;
     transition: all .4s;
+    padding:1vh 0;
+    z-index:2;
 }
 
 .navbar a{
     background-color: none;
-    height: 60%;
+    height: 100%;
     text-align: center;
-    margin:0 140px;
+    margin:3vh 10vw;
     width:7%;
     display: inline-block;
     text-decoration: none;
     color: rgb(227, 235, 242);
     font-weight: bolder;
-    line-height: 45px;
-    border-radius: 15px;
+    line-height: 6vh;
+    border-radius:20%;
     -webkit-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
     transition: all .2s;
     text-shadow: 3px 0px 7px #5B2718;
+    font-size: 1vw;
 }
 
 .navbar a:hover{
@@ -54,32 +58,35 @@ body, html{
 
 .main-title{
     position: absolute;
-    font-size: 27px;
     color: rgb(227, 235, 242);
     background-color: rgba(255, 255, 255,0);
-    padding: 150px 80px;
+    padding: 20vh 7vw;
     text-shadow: 3px 0px 7px #5B2718;
     animation: imageShow .3s ease;
 }
-
+.main-title h1{
+    font-size: 3.5vw;
+}
 .sideCover {
     height:140%;
     width: 60%;
     background: rgb(106,181,247);
     background: linear-gradient(105deg, rgba(106,181,247,1) 0%, rgba(223,238,251,1) 66%); 
     position: absolute;
-    top:-120px;
-    right: -250px;
+    top:-19vh;
+    right: -19vw;
     transform: rotate(30deg);
     animation: rotateCover 1s ease ;
     z-index: 2;
 }
-
+.logo img{
+    height:10vh;
+}
 .two{
     -webkit-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
-    right:-127px;
+    right:-9vw;
     animation: rotateCover 1s ease, rotateCover2nd 2s ease;
     background: rgb(106,181,247);
     background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
@@ -88,8 +95,8 @@ body, html{
 }
 
 .three {
-    top:210px;
-    left:195px;
+    top:30vh;
+    left:14vw;
     width:25%;
     animation: sideCover3rd 1s ease;
     background: rgb(106,181,247);
@@ -105,11 +112,12 @@ body, html{
 
 .menu{
     transform:rotate(-30deg) skewX(-30deg) ;
-    margin:10px 0;
-    padding:20px;
+    margin:1vh 0;
+    padding:3vh;
     -webkit-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
+font-size: 1.15vw;
 }
 
 .menu a{
@@ -185,19 +193,21 @@ box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    margin-bottom: 10vh;
 }
+
 .second-title {
-    margin: 45px 0;
+    margin: 4.5vh 0;
 }
 .second-title h1{
-    font-size: 45px;
+    font-size: 3vw;
     
 }
 .feature{
     position: relative;
     width: 65vw;
-    height: 270px;
-    margin:40px;
+    height: 38vh;
+    margin:4vw;
 }
 .f1, .f3{
     left:13vw;
@@ -215,7 +225,10 @@ box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
     text-align: center;
 }
 .feature-text p{
-    font-size: larger;
+    font-size: 1.5vw;
+}
+.feature-text h1{
+    font-size: 2vw;
 }
 .logo-feature{
     position: relative;
@@ -260,4 +273,75 @@ box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 }
 .f2 .feature-text{
     float:right;
+}
+
+
+.third{
+    height:160%;
+    background: rgb(12,4,148);
+    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+}
+.third h1, .third h3 ,.third h4{
+    font-size: 3vw;
+    color: rgb(227, 235, 242);
+}
+.third h3{
+    font-size: 2vw;
+}
+.third h4, .buttons span{
+    font-size: 1vw;
+}
+.buttons{
+    color: rgb(227, 235, 242);
+    margin-bottom: 3vw;
+}
+.buttons a, .redirect{
+    color: rgb(227, 235, 242);
+    background-color: rgba(73,73,210,.1);
+    line-height: 4vw;
+    display: inline-block;
+    text-decoration: none;
+    height: 4vw;
+    width: 16vw;
+    border: .1px solid;
+    border-radius: 7%;
+    box-shadow: 0px 6px 0px 0px rgba(12,4,148,1);
+    transition: background-color 0.3s;
+    position:relative;
+    font-size: 1vw;
+}
+
+.buttons a:hover, .redirect:hover{
+    background-color:  rgba(73,73,210,.8)
+}
+.buttons a:active, .redirect:active{
+    top:6px;
+    box-shadow: none;
+}
+.footer{
+    position: absolute;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: white;
+    right:0;
+    bottom:0;
+    width: 100vw;
+    height:32vh;
+}
+.logo-footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.logo-footer img{
+    position: absolute;
+    top:50%;
+    right:5%;
+    height:10vh;
 }

@@ -24,21 +24,21 @@
 
 @keyframes rotateCover2nd{
     0%{
-        right: -250px;
+        right: -19vw;
     }
     50%{
-        right:-250px;
+        right: -19vw;
     }
     100%{
-        right:-127px;
+        right:-9vw;
     }
 }
 @keyframes sideCover3rd {
     from{
-        top: 500px;
+        top:50vh;
     }
     to {
-        top: 210px;
+        top:30vh;
     }
 }
 

@@ -22,4 +22,29 @@ window.addEventListener("scroll", function(){
     }else{
         document.getElementById("navbar").style.boxShadow= "none";
     }
-  });
+});
+
+const checkVis = function(element){
+    const el = element.getBoundingClientRect()
+
+    return (
+        el.top >= 0 &&
+        el.left >= 0 &&
+        el.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        el.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+const f1 = document.querySelector("#f1");
+const f2 = document.querySelector("#f2");
+const f3 = document.querySelector("#f3");
+
+document.addEventListener('scroll', function(){
+    if(checkVis(f3)){
+        console.log("feature 3 muncul")
+    }else if(checkVis(f2)){
+        console.log("feature 2 muncul")
+    }else if(checkVis(f1)){
+        console.log("feature 1 muncul")
+    }
+})
